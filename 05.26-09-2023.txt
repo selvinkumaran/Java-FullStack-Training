@@ -1,0 +1,4 @@
+Using Bootsrap I have build a whole E-commerce website.
+Triks in Bootstap.
+Basics of javascript.
+I have learned a Map,Reduce,Filter,Promise,AsynAwait,Rest,Spread,Fetch.
