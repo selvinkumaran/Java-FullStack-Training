@@ -1,0 +1,5 @@
+In javascript I have learned basic like variables,keyword,condition,loops, and slight move on advanced topic.
+Instead of using normal function we use arrow function.
+For iterate an array use for of loop.
+fFor iterate an object use for in loop.
+and we learned map,spread,filter,reduce,slice,AsynAwait in depth.
