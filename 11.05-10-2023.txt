@@ -4,10 +4,6 @@ Built an web application with the following requirements
     *Cart page with items and remove button 
     *Quantity count with + and - buttons
 
- 
-
- 
-
 Form validation for the following fields
 ----------------------------------------
     *Name 

@@ -1,0 +1,10 @@
+I have done a form validation using a javascript.
+The requirements of form are 
+    *Name       
+    *Email address
+    *Phone Number
+    *Radio
+    *Checkbox
+    *Dropdown
+
+If all the Requirements are satisfies then submit have to active and also able to submit.
