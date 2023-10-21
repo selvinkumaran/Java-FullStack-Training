@@ -1,5 +1,6 @@
 I have learned newly in javascript 
---Session storage
---Local storage
---Json to stringify
-How to build a whole E-commerce apllication wsing javascript.
+            --> * Session storage
+            --> * Local storage
+            --> * Json to stringify
+
+How to build a whole E-commerce apllication using Javascript.

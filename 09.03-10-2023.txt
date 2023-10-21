@@ -1,10 +1,15 @@
-Built a e-commerce website using html5, css3, bootstrap5, javascript.
+Built a e-commerce website using:
+                    --> Html 5
+                    --> Css 3
+                    --> Bootstrap 5
+                    --> Javascript
+                    
 Pages:
-sign in 
-sign up 
-sign out
-admin home Page
-user home page
-add product
-orders
-cart
+    --> * Sign in 
+    --> * Sign up 
+    --> * Sign out
+    --> * Admin home Page
+    --> * User home page
+    --> * Add product
+    --> * Orders
+    --> * Cart

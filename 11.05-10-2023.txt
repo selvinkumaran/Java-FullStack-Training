@@ -1,16 +1,15 @@
 Built an web application with the following requirements
 --------------------------------------------------------
-    *A home page with products 
-    *Cart page with items and remove button 
-    *Quantity count with + and - buttons
+    --> * A home page with products 
+    --> * Cart page with items
 
 Form validation for the following fields
 ----------------------------------------
-    *Name 
-    *Email 
-    *Phone Number
-    *Radio button 
-    *Check Box 
-    *Drop down 
-    *submit button
+    --> * Name 
+    --> * Email 
+    --> * Phone Number
+    --> * Radio button 
+    --> * Check Box 
+    --> * Drop down 
+    --> * submit button
 

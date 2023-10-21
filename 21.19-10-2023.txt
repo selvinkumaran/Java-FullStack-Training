@@ -1,0 +1,49 @@
+Angular
+-------
+
+CanDeactivate
+-------------
+    --> You can use the CanDeactivate guard to prevent users from accidentally leaving a route/page in your application. 
+    --> For example if such page contains a text editor with unsaved changes or an unsubmitted form.
+
+Animation
+---------
+    --> The animate() function accepts the timings and styles input parameters. 
+
+Pagination
+----------
+    --> Pagination is used to split a large set of data into a sequence of pages that have similar content. 
+
+Hosting Angular project
+-----------------------
+
+Step 1:
+-------
+    --> Create your Github Repository:
+    --> After creating the repo, commit all your changes and push your project files to the repository you have created.
+
+Step 2:
+-------
+    --> Install Angular CLI gh-pages:
+    --> $ npm i angular-cli-ghpages --save-dev
+
+Step 3:
+-------
+    Run Build :
+    ---------
+            --> $ ng build --prod --base-href "https://GithubUserName.github.io/GithubRepoName/"
+            --> Note: Make sure you put in your Github username in “GithubUserName” and the repository name you created in “GithubRepoName” sections of the URL.
+
+Step 4:
+-------
+    Deploy to gh-pages:
+    -------------------
+            --> $ npx angular-cli-ghpages --dir=dist/Project-name
+            --> Note: Make sure you put the name of the project in the place of “Project-name” in the command above.
+
+Step 6:
+-------
+    Visit the App Page:
+    ------------------
+            --> Visit the URL to your App gh-pages, 
+            --> It is the same URL you created earlier on our terminal; https://GithubUserName.github.io/GithubRepoName/

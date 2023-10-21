@@ -1,0 +1,16 @@
+Angular E-commerce
+------------------
+            --> * Sign In page
+            --> * Sign Up page
+            --> * Home page
+            --> * Cart page
+            --> * Sign Out page
+
+Angular Form Validation 
+-----------------------
+            --> * [(ngModel)] => To get a value of two way binding
+            --> * ngModle => to get a direct properties of object
+            --> * #variableName => To throw an error message in a separate input feilds
+            --> * name=" " => Able to get a direct access of ngForm
+            --> * resetForm() => It reset the form after submitted
+            --> * By using resetForm() removed the ngClass error after submitting form.

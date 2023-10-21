@@ -1,3 +1,48 @@
-Today I have completed a whole website and started another website too using bootsrap
-original website:https://beminimalist.co/
-copy website: https://selvinkumaran.github.io/Minimalist/
+Today I have completed a whole website and started another website too using Bootsrap
+
+Original website:https://beminimalist.co/
+Copy website: https://selvinkumaran.github.io/Minimalist/
+
+Bootsrap Concepts:
+-----------------
+                *--> Containers
+                *--> Grid
+                *--> Columns
+                *--> Gutters
+                *--> CSS Grid
+                *--> Form control
+                *--> Checks & radios
+                *--> Range
+                *--> Input group
+                *--> Validation
+                *--> Alerts
+                *--> Badge
+                *--> Breadcrumb
+                *--> Buttons
+                *--> Button group
+                *--> Card
+                *--> Carousel
+                *--> Dropdowns
+                *--> Navbar
+                *--> Placeholders
+                *--> Scrollspy
+                *--> Spinners
+                *--> Toasts
+                *--> Color & background
+                *--> Position
+                *--> Ratio
+                *--> Visually hidden
+                *--> Background
+                *--> Borders
+                *--> Colors
+                *--> Display
+                *--> Flex
+                *--> Float
+                *--> Opacity
+                *--> Overflow
+                *--> Position
+                *--> Shadows
+                *--> Sizing
+                *--> Spacing
+                *--> Text
+

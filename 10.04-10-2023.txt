@@ -1,2 +1,4 @@
-Did the whole E-commece website and uploaded in github
-website link:https://selvinkumaran.github.io/online_shopping/
+Completed E-commece website and uploaded in github
+
+website link:
+    --> https://selvinkumaran.github.io/online_shopping/

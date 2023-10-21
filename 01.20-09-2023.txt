@@ -1,18 +1,28 @@
 This is the first day of my taining.
+
 Client to Server:
     Load Balancer -> Micro services (different server) -> Server ->Database
-Hard Disk -> permanent memory storage
-RAM -> Random Access memory
+
+Hard Disk --> permanent memory storage
+
+RAM --> Random Access Memory
        highest memory storage 32 gb
        It is faster than then hard Disk
-CPU -> Central Proccessing Unit
+
+CPU --> Central Proccessing Unit
        It is faster than all
-Cache -> Temporary memory storage
+
+Cache --> Temporary memory storage
          It is faster than RAM and it saves temporary data before shuting down
-DNS -> Domain Name System
-TCP -> Transmission Control Protocol
-UDP -> User Datagram Protocol
+
+DNS --> Domain Name System
+
+TCP --> Transmission Control Protocol
+
+UDP --> User Datagram Protocol
     It is faster than TCP
     It is used for video call and audio call
-IP -> Internet Protocol
-API ->
+
+IP --> Internet Protocol
+
+API -->Application programming interface

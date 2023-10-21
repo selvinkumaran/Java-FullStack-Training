@@ -3,14 +3,14 @@ Javascript Topics
     *getElementById 
     *getElementByClass 
     *getElementByTag 
-    *querySelector 
+    *queryAllSelector 
     *window 
     *onload 
     *clickhandler() function
     *Two way binding 
     *parseInt
 
-And build an website like phone book directory using javascript 
+And build an website like phone book directory using Javascript 
 
 --> Worked on some example problems using javascript.
 

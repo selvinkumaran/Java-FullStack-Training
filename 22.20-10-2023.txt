@@ -1,0 +1,108 @@
+Java
+-----
+
+Data Types in Java
+    --> * boolean
+    --> * byte
+    --> * char
+    --> * short
+    --> * int
+    --> * long
+    --> * float
+    --> * double
+
+
+Data Type	   Default Value	   Default size
+boolean	        false	            1 bit
+char	        '\u0000'	        2 byte
+byte	        0	                1 byte
+short	        0	                2 byte
+int	            0	                4 byte
+long	        0L	                8 byte
+float	        0.0f	            4 byte
+double	        0.0d	            8 byte
+
+
+Array Declaration:
+        int[] arr1={1,2,3,4,5};                -->  System.out.println(arr1); output: [I@e9e54c2
+        String[] arr2={"asd","fgh","jkl"};      --> System.out.println(arr2); output:[Ljava.lang.String;@e9e54c2
+        char[] arr3={'s','d','f'};              --> System.out.println(arr3); output:sdf
+        double[] arr4={1.2,34.3};               --> System.out.println(arr4); output:[D@e9e54c2
+        float[] arr5={23f,22f};                 --> System.out.println(arr5); output:[F@e9e54c2
+        boolean[] arr6={true,false};            --> System.out.println(arr5); output:[Z@e9e54c2
+
+If directly print a variable name it prints a memory address
+We have to give index value to see a particular value
+
+----------------------------------------------------
+
+Array Declaration with fixed size --> int[] arr =[3]; 
+
+To assign a value:
+        --> arr[0]=2;
+        --> arr[1]=6;
+        --> arr[2]=7;
+
+String[] arr2=["asd","fgh","jkl"]; --> error: java: illegal start of expression
+
+
+   for loop
+   --------
+        int[] arrLoop={1,2,3,4,5,6,7,8,9};
+        for(int i=0;i<=arrLoop.length;i++){
+            System.out.print(i+" ");
+        }
+        System.out.println();
+    output:
+    -------
+        0 1 2 3 4 5 6 7 8 9 
+
+    Error in an array:
+     for loop
+    --------
+        int[] arrLoop={1,2,3,4,5,6,7,8,9};
+        for(int i=0;i<=arrLoop.length+1;i++){
+            System.out.print(arrLoop[i]+" ");
+        }
+        System.out.println();
+    output:
+    -------
+        1 2 3 4 5 6 7 8 9 Exception in thread "main" 
+        java.lang.ArrayIndexOutOfBoundsException: Index 9 out of 
+        bounds for length 9 at Main.main(Main.java:48)
+
+    while loop
+    ----------
+        int[] numbers = {2, 4, 6, 8, 10};
+        int index = 0;
+        while (index < numbers.length) {
+            System.out.println("num"+numbers[index]);
+            index++;
+        }
+    output:
+    -------
+            num2
+            num4
+            num6
+            num8
+            num10
+
+    Error in while loop
+    ----------
+        int[] numbers = {2, 4, 6, 8, 10};
+        int index = 0;
+        while (index <= numbers.length) {
+            System.out.println("num"+numbers[index]);
+            index++;
+        }
+    output:
+    --------
+        Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
+	at Main.main(Main.java:55)
+
+    --> Try catch block
+    --> String
+    --> Stringbuffer
+    --> Stringbuilder
+
+Started doing Atm Application in console.

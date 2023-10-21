@@ -1,4 +1,42 @@
 Using Bootsrap I have build a whole E-commerce website.
-Triks in Bootstap.
+
+Some tricks in Bootstap.
+
 Basics of javascript.
-I have learned a Map,Reduce,Filter,Promise,AsynAwait,Rest,Spread,Fetch.
+                --> * Syntax
+                --> * Variables
+                --> * Let
+                --> * Const
+                --> * Operators
+                --> * Arithmetic
+                --> * Data Types
+                --> * Functions
+                --> * Strings
+                --> * Numbers
+                --> * Arrays
+                --> * Math
+                --> * Random
+                --> * Booleans
+                --> * If Else
+                --> * Switch
+                --> * Loop For
+                --> * Loop For In
+                --> * Loop For Of
+                --> * Loop While
+                --> * Break
+                --> * Sets
+                --> * Maps
+                --> * Typeof
+                --> * Type Conversion
+                --> * Arrow Function
+                --> * Reserved Words
+
+I have learned in javascript:
+                --> * Map
+                --> * Reduce
+                --> * Filter
+                --> * Promises
+                --> * Async/Await
+                --> * Rest
+                --> * Spread
+                --> * Fetch
