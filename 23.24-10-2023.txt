@@ -1,0 +1,38 @@
+Java Oops concept:
+-----------------
+
+Object:
+------
+    --> * new keyword will create an object
+    --> * It is real world entity
+
+Class:
+-----
+    --> * It is bluprint of object
+    --> * In a file one class must be public
+
+Methods:
+-------
+    --> * Method with arguments
+    --> * Method without arguments
+    --> * Method with return arguments
+    --> * Method without return arguments
+
+Interface:
+---------
+    --> * It contains static constants and abstract methods
+    --> * We can't create object for interface
+    --> * Access specifier should be only public
+
+Abstract:
+---------
+    --> * It contains concreate methods and abstract methods
+    --> * We can't create object for abstract
+    --> * Access specifier can be only public, private, default, protected
+
+Date:
+----
+    Date date =new Date();
+    SimpleDateFormat simpleDateFormat=new SimpleDateFormat("MMMM EEEE  d/MM/yyyy");
+    System.out.println(simpleDateFormat.format(date));
+    MMM-month if you give above lengthod 4 it gives full character
