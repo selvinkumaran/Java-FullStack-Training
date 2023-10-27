@@ -1,0 +1,41 @@
+Java Console E-Commerce Application
+-----------------------------------
+
+Requirements
+------------
+
+        --> * Welcome page
+        --> * Login Page
+        --> * Register Page
+        --> * Cart Page 
+        --> * Order Page
+        --> * Categary Page
+        --> * Product Page
+
+It has three main components:
+        --> * Model
+        --> * View
+        =-> * Controller
+
+Model:
+------
+        --> * Handles data logic
+View:
+-----
+        --> * It displays the information from the model to the user 
+Controller: 
+-----------
+        --> * It controls the data flow into a model object and updates the view whenever data changes 
+
+Utils:
+------
+        Repeated methods
+        ----------------
+                --> * AppCustomException
+                --> * AppScanner
+                --> * AppInput
+
+
+Asserts:
+-------
+        --> * csv files
