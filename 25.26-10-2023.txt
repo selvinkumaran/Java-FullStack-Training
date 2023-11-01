@@ -34,8 +34,7 @@ Utils:
                 --> * AppCustomException
                 --> * AppScanner
                 --> * AppInput
-
-
+ 
 Asserts:
 -------
         --> * csv files

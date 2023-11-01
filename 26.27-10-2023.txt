@@ -1,0 +1,32 @@
+Admin can able to:
+-----------------
+          --> * View user
+          --> * Add products
+          --> * Edit products
+          --> * Delete products
+          --> * Add categories
+          --> * Edit categories
+          --> * Delete categories
+
+Users can able to :
+          --> * Register
+          --> * View products
+          --> * View Categories
+          --> * Add to cart 
+          --> * View cart 
+          --> * Checkout
+          --> * Place orders
+          --> * View orders
+
+Admin 
+-----
+    --> * Started creating models from admin side and separate admin view page 
+    --> * Separate admin controller for thier logics
+    --> * And separated role(enum) of admin and user in auth controller in the method of auth controller.
+
+Way follows to edit and delete CSV file:
+----------------------------
+            --> * Read all the data from the CSV file using CSVReader
+            --> * Store all the data in an ArrayList
+            --> * process the data by adding function for edit and delete of their own logics
+            --> * And finally write by using CVSWriter again in the same file.

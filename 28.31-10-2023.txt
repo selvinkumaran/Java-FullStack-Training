@@ -1,0 +1,88 @@
+Java 8 features
+---------------
+        --> * Lambda expressions 
+        --> * Functional interfaces 
+        --> * Stream API 
+        --> * Default methods 
+        --> * Static methods in interface 
+        --> * Optional class 
+        --> * Collectors class 
+        --> * ForEach() method 
+
+
+Before Java 8
+-------------
+    String stringDate="2019-07-15";  
+    Date date1=new SimpleDateFormat("yyyy-MM-dd").parse(stringDate);  
+    Calendar cal = Calendar.getInstance();
+    cal.setTime(date1);
+
+    // manipulate date
+    cal.add(Calendar.DATE, 5); 
+    Date dateWith5Days = cal.getTime();
+
+    System.out.println(dateWith5Days);
+
+Using Java 8
+------------
+    LocalDate date = LocalDate.parse("2019-07-15");
+
+    //add 5 days
+    LocalDate date2 = date.plusDays(5);
+    System.out.println("Date "+date+" plus 5 days is "+date2);
+
+
+      Intermediate Operations	                                            ||         Terminal Operations
+      -----------------------                                               ||         --------------------
+* They return stream                                          	            ||    * They return non-stream values.
+* They can be chained together to form a pipeline of operations             ||    * They can’t be chained together.
+* Pipeline of operations may contain any number of intermediate operations  ||    * Pipeline of operations can have maximum one terminal operation, that too at the end.
+* Intermediate operations are lazily loaded                                 ||    * Terminal operations are eagerly loaded.
+* They don’t produce end result                                             ||    * They produce end result.                                                                       
+* Examples :                                                                ||    * Examples :
+        filter(), map(), distinct(), sorted(), limit(), skip()	            ||           forEach(), toArray(), reduce(), collect(), min(), max(), count(), anyMatch(), allMatch(), noneMatch(), findFirst(), findAny()
+
+
+Some programs
+-------------
+
+ // java 8
+//        System.out.println(IntStream.range(1, 51).sum());
+
+        //Consumer
+        List<Person> personLists = PersonRepository.getAllPerson();
+        Consumer<String> Consumer = name -> {
+//            System.out.println("Name: "+name);
+        };
+        personLists.forEach(person -> Consumer.accept(person.getName().toUpperCase()));
+
+
+        //BiConsumer
+        List<Person> personList = PersonRepository.getAllPerson();
+        BiConsumer<String, List<String>> biConsumer = (name, hobbies) -> {
+//            System.out.println("Name: "+name+"hobbies: "+hobbies);
+        };
+        personList.forEach(person -> biConsumer.accept(person.getName(), person.getHobbies()));
+
+
+        //predicate
+        Predicate<Person> heightPredicate = p -> p.getHeight() >= 140;
+        Predicate<Person> genderPredicate = p -> p.getGender().equals("Male");
+        personList.forEach(person -> {
+            if (heightPredicate.and(genderPredicate).test(person)) {
+//                System.out.println(person.getName().toUpperCase());
+            }
+        });
+
+        //Bi predicate
+        BiPredicate<Person, String> biPredicate = (person, gender) -> {
+            boolean isHeightSatisfied = person.getHeight() >= 140;
+            boolean isGenderSatisfied = person.getGender().equals(gender);
+            return isHeightSatisfied && isGenderSatisfied;
+        };
+
+        personList.forEach(person -> {
+            if (biPredicate.test(person, "Male")) {
+//                System.out.println(person.getName().toUpperCase());
+            }
+        });
