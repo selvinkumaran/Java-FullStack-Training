@@ -1,0 +1,93 @@
+Mysql
+-----
+    subQueries
+        --> * Noncorrelated
+            A noncorrelated (simple) subquery obtains its results independently of its containing (outer) statement.
+        --> * Correlated
+            A correlated subquery requires values from its outer query in order to execute.
+
+
+ACID Model
+----------
+        --> * A: Atomicity
+        --> * C: Consistency
+        --> * I: Isolation
+        --> * D: Durability
+
+Atomicity
+        --> * Atomicity because MySQL only reflects changes from a transaction when the transaction is complete.
+
+Consistency
+        --> * Consistency by logging all database changes and ensures the possibility of recovery to a previous state. 
+        --> * MySQL also has locking mechanisms in order to control committed or rolled back transactions.
+
+Isolation
+        --> * Isolation by controlling the traffic flow of transactions by maintaining the isolated processes of individual programs.
+
+Durability
+        --> * Durability because it by maintaining logs of previous database states during a transaction. 
+        --> * In the event of a system failure, you can recover your MySQL database at a certain state ensuring durability.
+
+Java Servlets
+-------------
+        --> * Servlets work on the server-side.
+        --> * Servlets are capable of handling complex requests obtained from the webserver
+
+Methods
+-------
+    --> * GET
+    --> * POST
+
+POST
+----
+    --> * protected void doPost(HttpServletRequest req, HttpServletResponse res) handles the POST request
+    --> * It is invoked by the web container
+
+GET
+---
+    --> * protected void doHead(HttpServletRequest req, HttpServletResponse res) handles the HEAD request
+    --> * It is invoked by the web container
+
+Cookie
+------
+Cookie()	constructs a cookie.
+Cookie(String name, String value)	constructs a cookie with a specified name and value.
+
+HttpSession
+-----------
+        PrintWriter out = response.getWriter();  
+          
+        String n=request.getParameter("userName");  
+        out.print("Welcome "+n);  
+          
+        HttpSession session=request.getSession();  
+        session.setAttribute("uname",n);  
+  
+        out.print("<a href='servlet2'>visit</a>");  
+        
+web.xml
+-------
+        <web-app>  
+
+        <servlet>  
+        <servlet-name>s1</servlet-name>  
+        <servlet-class>FirstServlet</servlet-class>  
+        </servlet>  
+
+        <servlet-mapping>  
+        <servlet-name>s1</servlet-name>  
+        <url-pattern>/servlet1</url-pattern>  
+        </servlet-mapping>  
+
+        <servlet>  
+        <servlet-name>s2</servlet-name>  
+        <servlet-class>SecondServlet</servlet-class>  
+        </servlet>  
+
+        <servlet-mapping>  
+        <servlet-name>s2</servlet-name>  
+        <url-pattern>/servlet2</url-pattern>  
+        </servlet-mapping>  
+
+        </web-app>  
+

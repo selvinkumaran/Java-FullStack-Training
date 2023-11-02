@@ -64,7 +64,6 @@ public class SimpleException {
             System.out.println("Caught");
         }
     }
-
 }
 
 
