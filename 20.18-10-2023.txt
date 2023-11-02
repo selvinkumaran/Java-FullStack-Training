@@ -1,0 +1,39 @@
+Angular E-commerce
+------------------
+creating in command line
+
+    --> * npm g c components
+    --> * npm g s services
+
+    --> * npm g c components
+
+
+components
+----------
+    --> * Components for Sign In page
+    --> * Components for Sign Up page
+    --> * Components for Home page
+    --> * Components for Cart page
+    --> * Components for Sign Out page
+
+Service:
+    --> * AuthService
+    --> * CartService
+    --> * ProductService
+    --> * StorageService
+
+Model
+-----
+    --> * Cart
+    --> * Product
+    --> * User
+
+common
+------
+    --> * Auth-Guard
+
+CanActivate
+----------
+    --> * Interface that a class can implement to be a guard deciding if a route can be activated
+    --> * If all guards return true, navigation continues
+    --> * If any guard returns false, navigation is cancelled
