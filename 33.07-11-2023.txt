@@ -1,0 +1,81 @@
+Spring Boot
+-----------
+
+The @SpringBootApplication 
+--------------------------
+Which is a combination of @Configuration, @EnableAutoConfiguration and @ComponentScan 
+
+@SpringBootApplication
+public class DemoApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(DemoApplication.class, args);
+    }
+}
+
+@Configuration
+public class AppConfig {
+
+// bean methods
+}
+
+Constructor based Autowiring 
+----------------------------
+            @Autowired annotation is optional for constructor based injection. Here, the person object from the container is passed to the constructor while creating the Customer object.
+            @Component
+            public class Customer {
+            
+                private int type;
+                private Person person;
+
+                public Customer() {
+                }
+
+                @Autowired
+                public Customer(Person person) {
+                    this.person = person;
+                }
+            }
+
+Property-based Autowiring
+-------------------------
+            The person object will be injected into the property person at run time using @Autowired annotation
+            @Component
+            public class Customer {
+            
+                private int type;
+
+                @Autowired
+                private Person person;
+            }
+
+Setter based Autowiring
+------------------------
+            The setter method will be called with the Person object at runtime by the container.
+            @Autowired
+            public void setPerson(Person person) {
+                this.person = person;
+            }
+
+pom.xml
+-------
+        <?xml version="1.0" encoding="UTF-8"?>
+        <beans xmlns="http://www.springframework.org/schema/beans"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.springframework.org/schema/beans
+                https://www.springframework.org/schema/beans/spring-beans.xsd
+                http://www.springframework.org/schema/context
+                http://www.springframework.org/schema/context/spring-context.xsd"
+                xmlns:context="http://www.springframework.org/schema/context"
+                >
+
+            <context:annotation-config/>
+            <bean id="customer" class="com.gfg.demo.domain.Customer">
+                <property name="type" value="1" />
+            </bean>
+
+            <bean id="person" class="com.gfg.demo.domain.Person">
+                <property name="name" value="ganesh" />
+                <property name="age" value="21" />
+            </bean>
+        </beans>

@@ -1,0 +1,51 @@
+spring
+------
+
+Configuration of Spring MVC Form Tag
+------------------------------------
+    --> * <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>  
+    --> * <form:input path="name" />
+    --> * <form:label path="name">Full Name: </form:label>
+    --> * <form:password path="password" />
+    --> * <form:checkbox path="job" value="Yes" />
+    --> * <form:checkboxes path="skill" items="${programmingSkills}" />
+    --> * <form:radiobutton path="gender" value="Male" label="Male" /> 
+    --> * <form:radiobutton path="gender" value="Female" label="Female" />
+
+@ModelAttribute
+---------------
+        It is an annotation that binds a method parameter or method return value to a
+        named model attribut and then exposes it to a web view. 
+The @InitBinder
+---------------
+        It plays a pivotal role in customizing the databinding process in Spring MVC.
+
+            @InitBinder
+        	public void initBinder(WebDataBinder binder) {
+        		StringTrimmerEditor editor = new StringTrimmerEditor(true);
+
+        		binder.registerCustomEditor(String.class, editor);
+        	}
+
+@RequestMapping 
+--------------
+        RequestMapping annotation is used to map web requests onto specific handler classes and/or handler methods. 
+        @RequestMapping can be applied to the controller class as well as methods
+
+            @RequestMapping("/processFormThree")
+        	public String processFormThree(@RequestParam("studentName") String name, Model model) {
+        		name = name.toUpperCase();
+        		name = "Hey v3 " + name;
+
+        		model.addAttribute("message", name);
+
+        		return "processForm";
+        	}
+
+It will create object 
+---------------------
+        <bean
+	    	class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	    	<property name="prefix" value="/WEB-INF/pages/" />
+	    	<property name="suffix" value=".jsp" />
+	    </bean>
