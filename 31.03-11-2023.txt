@@ -1,0 +1,107 @@
+JSP
+---
+Java Server Pages
+
+JSP scripting elements
+----------------------
+        --> * scriptlet tag --> <%  java source code %>  
+        --> * expression tag --> <%=  statement %>  
+        --> * declaration tag --> <%!  field or method declaration %>  
+
+JSP Directive Elements
+----------------------
+        --> * JSP page directive
+        --> * JSP include directive
+        --> * JSP taglib directive
+
+Cookie
+------
+      @Override
+       protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+           String name=req.getParameter("name");
+           Cookie cookie=new Cookie("name",name);
+           resp.addCookie(cookie);
+           resp.sendRedirect("cookie_to");
+    
+       }
+    
+    
+        protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        
+           String name="";
+           Cookie cookies[]=req.getCookies();
+           for (Cookie cookie: cookies) {
+               if (cookie.getName().equals("name")){
+                   name=cookie.getValue();
+               }
+           }
+           PrintWriter writer=resp.getWriter();
+           writer.write("<p> The nami is : "+name+ "</p>");
+    
+       }
+
+HttpSession
+-----------
+           @Override
+        protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {  
+
+            String name=req.getParameter("name");
+            HttpSession session=req.getSession();
+            session.setAttribute("name",name);
+            resp.sendRedirect("session_to");
+        }   
+
+          @Override
+        protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {   
+
+            HttpSession session= req.getSession();
+            String name=session.getAttribute("name").toString();
+            PrintWriter writer =resp.getWriter();
+            writer.write("<p> Username is : "+name+"</p>");
+            session.removeAttribute("name");
+        }
+
+Servlet mapping
+---------------
+            <servlet>
+               <servlet-name>CookieFrom</servlet-name>
+               <servlet-class>com.kumaran.E_CookieFrom</servlet-class>
+             </servlet>
+
+             <servlet-mapping>
+               <servlet-name>CookieFrom</servlet-name>
+               <url-pattern>/cookie</url-pattern>
+             </servlet-mapping>
+
+             <servlet>
+               <servlet-name>CookieTo</servlet-name>
+               <servlet-class>com.kumaran.F_CookieTo</servlet-class>
+             </servlet>
+
+             <servlet-mapping>
+               <servlet-name>CookieTo</servlet-name>
+               <url-pattern>/cookie_to</url-pattern>
+             </servlet-mapping>
+
+server
+------
+Apache Tomcat - version 8.5 or 9
+
+JDBC
+----
+Java Database Connectivity with MySQL
+
+We need to follow 5 following steps to Connect Java application
+----------------------------------------------------------------
+        --> * Class.forName("com.mysql.jdbc.Driver");  
+        --> * Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/sonoo","root","root");  
+        --> * Statement stmt=con.createStatement();  
+        --> * ResultSet rs=stmt.executeQuery("select * from emp");
+        --> * while(rs.next())  
+        --> * System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3));  
+        --> * con.close();  
+
+The PreparedStatement interface
+-------------------------------
+        --> *  It is used to execute parameterized query.
+        --> * String sql="insert into emp values(?,?,?)";  
