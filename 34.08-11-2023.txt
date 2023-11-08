@@ -1,0 +1,58 @@
+Spring Boot
+-----------
+Rest Api:
+--------
+    --> * GET
+    --> * POST
+    --> * PUT 
+    --> * DELETE
+
+@GetMapping("/book/all")
+    public List<Book> getAllBooks() {
+        return bookRepository.findAll();
+    }
+
+@GetMapping("/book/{id}")
+    public Book getBook(@PathVariable int id) {
+        return bookRepository.findById(id);
+    }
+
+@PostMapping("/book")
+    public List<Book> addBook(@RequestBody Book book) {
+        return bookRepository.insert(book);
+    }
+
+@PutMapping("/book")
+    public List<Book> updateBook(@RequestBody Book book) {
+        return bookRepository.update(book);
+    }
+
+@DeleteMapping("/book/{id}")
+    public List<Book> deleteBook(@PathVariable int id) {
+        return bookRepository.deleteById(id);
+    }
+
+private JdbcTemplate jdbcTemplate;
+----------------------------------
+        --> * Spring’s JdbcTemplate to access data stored in a relational database.
+
+BeanPropertyRowMapper()
+----------------------
+        --> * Create a new BeanPropertyRowMapper for bean-style configuration
+
+@RestController
+---------------
+        --> * Spring RestController annotation is used to create RESTful web services using Spring MVC
+        --> * Spring RestController takes care of mapping request data to the defined request handler method
+
+@RequestMapping("/api")
+-----------------------
+        --> * It used to map HTTP requests to handler methods of MVC and REST controllers
+
+@CrossOrigin
+------------
+        --> * Connecting Frontend with Backend the link will differ for that we using this annotation
+
+Postman
+-------
+    Postman is an API platform for developers
