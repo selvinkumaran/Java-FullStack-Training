@@ -1,0 +1,18 @@
+Created neccessary form action which interact with backends
+------------------------------------------------------------
+        --> * Login Form 
+        --> * Register Form
+        --> * Cruise Form 
+        --> * Tour Form
+        --> * Payment Form 
+        --> * Feedback Form
+
+Created tables for Admin to view all details 
+--------------------------------------------
+        --> * User Table 
+        --> * Cruise Table
+        --> * Tour Table
+        --> * Payment Table
+        --> * Booking Table
+        --> * Feedback Table
+

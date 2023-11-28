@@ -1,0 +1,49 @@
+Boiler Plates for SpringBoot API
+--------------------------------
+
+Repositories
+------------
+        --> * BookingRepository
+        --> * BookingStatusRepository
+        --> * CruiseRepository
+        --> * FeedbackRepository
+        --> * PaymentRepository
+        --> * RoleRepository
+        --> * TourRepository
+        --> * UserRepository
+
+Request
+-------
+        --> * BookingRequest
+        --> * BookingStatusRequest
+        --> * CruiseRequest
+        --> * FeedbackRequest
+        --> * LoginRequest
+        --> * PaymentRequest
+        --> * RegisterRequest
+        --> * TourRequest
+        --> * UserRequest
+
+Response
+--------
+        --> * APIResponse
+        --> * ErrorResponse
+        --> * AuthResponse
+        --> * BookingResponse
+        --> * CruiseResponse
+        --> * FeedbackResponse
+        --> * PaymentResponse
+        --> * TourResponse
+        --> * UserResponse
+
+DTO-Data Tranfer Object
+-----------------------
+        --> * AuthDto
+        --> * BookingDto
+        --> * CruiseDto
+        --> * FeedbackDto
+        --> * PaymentDto
+        --> * TourDto
+        --> * UserDto
+        
+ Strated writting API

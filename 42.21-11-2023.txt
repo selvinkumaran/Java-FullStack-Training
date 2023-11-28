@@ -1,0 +1,39 @@
+In service File
+---------------
+        --> * get all the request which comes from backend 
+
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { AppResponse, TodoItem } from 'your-models'; // Replace with actual models
+
+@Injectable({
+  providedIn: 'root',
+})
+export class TodoService {
+  private baseUrl = `${urlEndpoint.baseUrl}/admin`;
+
+  constructor(private http: HttpClient) {}
+
+  // Get all Todo Items
+  getTodoItems(): Observable<AppResponse<TodoItem[]>> {
+    return this.http.get<AppResponse<TodoItem[]>>(`${this.baseUrl}/all`);
+  }
+
+  // Add Todo Item
+  addTodoItem(newItem: TodoItem): Observable<AppResponse<TodoItem>> {
+    return this.http.post<AppResponse<TodoItem>>(`${this.baseUrl}/add`, newItem);
+  }
+
+  // Edit Todo Item
+  editTodoItem(updatedItem: TodoItem): Observable<AppResponse<TodoItem>> {
+    return this.http.put<AppResponse<TodoItem>>(`${this.baseUrl}/edit`, updatedItem);
+  }
+
+  // Delete Todo Item
+  deleteTodoItem(itemId: number): Observable<AppResponse<void>> {
+    return this.http.delete<AppResponse<void>>(`${this.baseUrl}/delete/${itemId}`);
+  }
+}
+
+This is basic and common for all the service file   

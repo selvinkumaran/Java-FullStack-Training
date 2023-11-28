@@ -1,0 +1,9 @@
+Written all the GET request and showed in a Frontend
+
+And started doing POST method in all the Components
+
+The response from the back and the Model have to same
+
+Completed one by one all Method in a Components
+
+And fixing bugs and getting Expected output

@@ -1,0 +1,20 @@
+Writting logics in component.ts file for getting Expected output 
+
+Getting Many errors and Fixing by console it  
+
+Integration of back end
+        - Integrated all Methods in Cruise
+            ->POST 
+            ->PUT
+            ->DELETE
+
+        - Integrated all Methods in Tour
+            ->POST 
+            ->PUT
+            ->DELETE
+
+completed all the logic parts on Cruise and Tours 
+
+Started PaymentController Api calls
+
+Some changes in payment Model in backend 

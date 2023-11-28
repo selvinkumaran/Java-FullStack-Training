@@ -1,0 +1,23 @@
+Functionality Completion:
+-------------------------
+        --> * All required functionalities, including Add Items, View Items, Edit Items, Delete Items, and user authentication, have been successfully implemented.
+        --> * Integration between the frontend and backend has been completed to ensure seamless communication.
+
+Image Upload to MySQL Database:
+------------------------------
+        --> * Implemented the functionality to upload images to the MySQL database, enhancing the project's multimedia capabilities.
+
+Booking Component:
+-----------------
+        --> * Completed the Booking component, catering to both user and admin sides. 
+        --> * This includes the necessary features and interactions for a comprehensive booking system.
+
+Testing:
+-------
+        --> * Thoroughly tested all functionalities to ensure they work correctly and reliably. 
+        --> * This includes unit testing, integration testing, and end-to-end testing as applicable.
+
+Project Modifications:
+---------------------
+        --> * Made modifications to enhance the project's user interface, such as updating the navbar and index page. 
+        --> * These changes contribute to a more user-friendly and visually appealing application.

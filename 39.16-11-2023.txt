@@ -1,0 +1,48 @@
+Completed All API end points:
+----------------------------
+User
+----
+    --> * Cruise
+            --> * GET
+    --> * Tour
+            --> * GET
+    --> * Feedback
+            --> * GET
+            --> * POST 
+            --> * PUT
+            --> * DELETE
+    --> * Payment
+            --> * GET
+            --> * POST 
+    --> * Booking
+            --> * GET
+            --> * POST 
+
+Admin
+-----
+    --> * Users
+            --> * GET
+    --> * Cruise
+            --> * GET
+            --> * POST 
+            --> * PUT
+            --> * DELETE
+    --> * Tour
+            --> * GET
+            --> * GET
+            --> * GET
+            --> * POST 
+            --> * PUT
+            --> * DELETE
+    --> * Feedback
+            --> * GET
+    --> * Payment
+            --> * GET
+    --> * Booking
+
+Auth
+----
+    --> * Register
+            --> * POST
+    --> * Login
+            --> * POST

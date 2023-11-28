@@ -1,0 +1,15 @@
+Started Frontend Technology
+---------------------------
+
+Created Angular project version 16.2
+
+Started creating
+        --> * Components
+        --> * Services
+        --> * Models
+
+Choose Font style and color for the website for good User Experience
+
+Searching templates for following websites evanto, dribble etc...
+
+Started creating website using Html, Css, Bootsrap..

@@ -1,0 +1,18 @@
+Completed payment Side and Strated Feedback component
+
+Feedback
+--------
+        --> * Showing all the feedback to admin
+        --> * Showing particular feedback to users
+User Side Method
+----------------
+        --> * GET
+        --> * POST 
+        --> * PUT
+        --> * DELETE
+
+Admin Side Method
+----------------
+        --> * GET(all the feedback which comming from all the users)
+      
+And also started working on the payment to store in a booking table mapped with id

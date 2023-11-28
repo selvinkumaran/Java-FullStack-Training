@@ -1,0 +1,27 @@
+Task:
+-----
+Create a robust REST API for a Todo application with JPA, ensuring secure login and registration functionalities. 
+
+The application should allow users to perform the following operations:
+        --> * Add Items
+        --> * View Items
+        --> * Edit Items
+        --> * Delete Items
+
+Incorporate the following JPA security concepts:
+-----------------------------------------------
+        --> * Integrate necessary security dependencies
+        --> * Make use of Optional<> for handling optional data
+        --> * Harness the power of Derived Queries for efficient data retrieval
+        --> * Develop a Data Loader to initialize and load essential data
+        --> * Utilize Application Events to enhance control over application processes
+        --> * Implement Encryption mechanisms to safeguard sensitive information
+        --> * Set up Authorization and Authentication using Basic auth
+        --> * Employ HttpStatus Codes for clear communication of status information
+        --> * Enable web security with the @EnableWebSecurity annotation
+        --> * Implement DaoAuthenticationProvider for user authentication
+        --> * Configure HttpSecurity to define specific security policies
+        --> * Create a SecurityFilterChain with:
+        --> * permitAll() to allow unrestricted access
+        --> * antMatchers() for specifying URL patterns
+        --> * csrf() to protect against Cross-Site Request Forgery attacks

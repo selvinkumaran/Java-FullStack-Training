@@ -1,0 +1,42 @@
+Mini Project
+------------
+        --> * Cruise Booking and Management
+
+planned for writting API and Boiler plates:
+------------------------------------------
+Controller
+----------
+        --> * AdminBookingController.java
+        --> * AdminCruiseController.java
+        --> * AdminFeedbackController.java
+        --> * AdminPaymentController.java
+        --> * AdminTourController.java
+        --> * AdminUserController.java
+        --> * AuthController.java
+        --> * BookingController.java
+        --> * CruiseController.java
+        --> * FeedbackController.java
+        --> * PaymentController.java
+        --> * TourController.java
+
+Model
+-----
+        --> * AppUser.java
+        --> * Tour.java
+        --> * Role.java
+        --> * Booking.java
+        --> * BookingStatus.java
+        --> * Cruise.java
+        --> * Payment.java
+        --> * Feedback.java
+
+Service
+-------
+        --> * BookingService
+        --> * CruiseService
+        --> * FeedbackService
+        --> * PaymentService
+        --> * StorageService
+        --> * TourService
+        --> * UserDetailsService
+        --> * ImplUserService

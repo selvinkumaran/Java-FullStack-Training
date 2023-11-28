@@ -49,7 +49,7 @@ JPA(Java persistance API)
         - @Primary
         - @Id
         - @Generatevalue
-        - @Table(name = "table_person")
+        - @Table(name = "table_person") 
         - @Column(name = "address")
         - @Transaction
         - @Getter

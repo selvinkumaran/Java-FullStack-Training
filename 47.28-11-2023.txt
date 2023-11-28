@@ -1,0 +1,5 @@
+Retrieval of image from backend and shown in front end
+
+And doing UI design of Home page and service page
+
+Working on frontend ...
