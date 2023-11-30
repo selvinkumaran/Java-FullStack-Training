@@ -1,0 +1,7 @@
+Completed the project
+---------------------
+        --> * Completed the mini project successfully.
+        --> * Sent the corresponding video clip to the trainer for evaluation.
+        --> * Implemented alignment changes in the frontend, with a specific focus on the admin navbar for proper alignment.
+        --> * Conducted a thorough code check and review, making necessary corrections for clarity and accuracy.
+        --> * Integrated Lottie animations thoughtfully in the required areas.

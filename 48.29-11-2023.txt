@@ -1,0 +1,7 @@
+Working on a Project
+--------------------
+        --> * Added a new component for the users to see all the tour in a new page 
+        --> * Reused the GET method which already used for tour component
+        --> * After observable the GET method subscribe and stored in an array
+        --> * And Iterate an array to show the details of tour to the users
+        --> * Working on the UI side...
