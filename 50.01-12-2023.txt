@@ -1,0 +1,6 @@
+Topics Learned:
+        --> * struts
+        --> * Custom validation
+        --> * Lasy loading
+
+Completed the project.........
